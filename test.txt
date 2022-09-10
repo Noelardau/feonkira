@@ -1,0 +1,3 @@
+demarrage: 
+terminal 1: cd back; npm start
+terminal 2: lancer le serveur de react
