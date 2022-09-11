@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API</title>
+    <link rel="stylesheet" href="./semantic/semantic.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script/axios.js"></script>
+    <script src="./script/jquery.js"></script>
+    <script src="./script/vue.js"></script>
+    <!-- <script src="./script/app.js"></script> -->
+</head>
+<body>
+    <div id="app">
+
+        <div class="ui fixed menu">
+            <div class="item">Home</div>
+            <div class="item">About us</div>
+            <div class="item right" v-if="connected != null" @click="deconnect"><i class="log out icon"></i></div>
+        </div>
+
+        <div class="ui main container">
+            <div class="ui form">
+                <div class="field">
+                    <label for="pseudo">Pseudo</label> <input type="text" v-model="pseudo">
+                </div>
+                <div class="field">
+                    <label for="pass">Mot de passe</label> <input type="password" v-model="pass">
+               </div>
+               <div class="ui button blue" @click="connect">Connexion</div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+
+            axios.defaults.baseURL = "http://localhost:5000"
+        new Vue({
+            el:"#app",
+            data:{
+                pseudo:"",
+                pass:"",
+                connected: localStorage.getItem("token"),
+                idUserConnected: localStorage.getItem("idUser")
+            },
+            methods:{
+                connect(){
+                    axios.post("/connectUser",{
+                        pseudo: this.pseudo,
+                        password:this.pass
+                    }).then(response=>{
+                        localStorage.setItem("token",response.data.token)
+                        this.token = localStorage.getItem("token")
+
+                        localStorage.setItem("idUser",response.data.idUser)
+                        this.token = localStorage.getItem("idUser")
+
+
+                        location.reload()
+                    })
+                },
+                deconnect(){
+                    localStorage.removeItem("token")
+                    location.reload()
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
