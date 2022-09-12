@@ -1,0 +1,31 @@
+.btn{
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+.btn button{
+    width: 45px;
+    height: 30px;
+    border-radius: 5px;
+    animation: 6s bgc ease-out infinite alternate;
+    float: right;
+    margin-right: 45px;
+
+}
+.btn button img{
+    animation: img 1s ease-in-out infinite;
+}
+@keyframes bgc {
+    from{
+        background-color: #fff;
+    }to{
+        background-color: rgb(184, 76, 4);
+    }
+}
+@keyframes img {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}

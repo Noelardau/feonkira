@@ -1,0 +1,98 @@
+.contfoot{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-top: 45px;
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 25px;
+    
+}
+.contfoot .contfootup{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 25px;
+    padding-left: 55px;
+    box-sizing: border-box;
+
+}
+.contfoot .contfootup div{
+    width: 47%;
+    height: auto;
+    padding-bottom: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.contfoot .contfootup .contfootupone{
+    background-color: #6609ff;
+    display: flex;
+    align-items: center;
+}
+.contfoot .contfootup .contfootupone img{
+    width: 70%;
+    padding-left: 85px;
+}
+.contfoot .contfootup .contfootuptwo{
+    text-align: left;
+    
+}
+.contfoot .contfootup .contfootuptwo h2{
+    padding-top: 25px;
+    padding-left: 25px;
+    color: #6609ff;
+}
+.contfoot .contfootup .contfootuptwo p{
+    padding-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.contfoot .contfootup .contfootuptwo form{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.contfoot .contfootup .contfootuptwo form input{
+    width: 50%;
+    height: 30px;
+}
+.contfoot .contfootup .contfootuptwo form button{
+    width: 25%;
+    height: 50px;
+    background-color: #6609ff;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contfoot .contfootdown{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 25px;
+    padding-top: 45px;
+    padding-left: 55px;
+    color: #fff;
+    box-sizing: border-box;
+}
+.contfoot .contfootdown table{
+    width: 80%;
+    text-align: left;
+}
+.contfoot .contfootdown table th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #6609ff;
+}
+.contfoot .contfootdown table td{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(219, 219, 219);
+}

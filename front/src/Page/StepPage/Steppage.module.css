@@ -1,0 +1,44 @@
+.cont{
+    width: 100%;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    text-align: left;
+}
+.cont div{
+    width: 50%;
+    padding-left: 55px;
+    margin-bottom: 35px;
+}
+.cont .contone h1{
+    width: 80%;
+    text-align: left;
+    margin-top: 25px;
+    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+    font-weight: 900;
+}
+.cont .contone p{
+    text-align: left;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.cont .contone button{
+    width: 15vw;
+    height: 8vh;
+    margin-top: 25px;
+    cursor: pointer;
+    border: solid 2px #6609ff;
+    font-weight: 900;
+    color:  #6609ff;
+
+}
+.cont .conttwo {
+    display: flex;
+    align-items: center;
+}
+.cont .conttwo img{
+    width: 100%;
+}
